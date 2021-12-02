@@ -12,6 +12,15 @@ BOT_NAME = 'arxiv'
 SPIDER_MODULES = ['arxiv.spiders']
 NEWSPIDER_MODULE = 'arxiv.spiders'
 
+LOG_LEVEL = "INFO"  # 输出级别
+'''
+CRITICAL -- 关键错误
+ERROR -- 一般级别的错误
+WARNING -- 警告信息
+INFO -- 信息消息的日志（建议生产模式使用）
+DEBUG -- 调试消息的日志（建议开发模式）
+'''
+LOG_STDOUT = True  # 是否标准输出
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'arxiv (+http://www.yourdomain.com)'

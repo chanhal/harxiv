@@ -8,7 +8,7 @@ def clean_text(inputt) :
 
 class arxivSpider(scrapy.Spider):
     config = json.load(codecs.open('config.json', 'r', 'utf-8'))['spider']
-    print(config)
+    # print(config)
     name = "arxiv"
     allowed_domains = ["arxiv.org"]
     start_urls = [

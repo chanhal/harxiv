@@ -7,10 +7,11 @@
   "ignore_desp": ["INTERSPEECH"],
   "title_highlight": [
     ["lower_weight", ["Summarization", "Machine Translation"]],
-    ["blue", ["Named Entity Recognition"]],
-    ["red", ["Question Answering", "Question Generation", "Reading Comprehension"]]
+    ["red", ["Causal", "Domain Adaptation", "Domain Adaptive", "Domain Generalization", " Open-World"]],
+    ["green", ["Zero-shot", "Object Detection", "Semantic Segmentation", "Fine-grained", "Unsupervised", "Visual Recognition", "Semi-supervised", "Vision-and-Language", "Long-Tail", "Self-Supervised", "Contrastive Learning", "Panoptic Segmentation", "Semi-Supervised", "Instance Segmentation", "Domain-Agnostic", "Few-Shot", "Federated Learning"]],
+    ["magenta", ["Visual Feature Learning"]]
   ],
   "author_highlight": [
-    ["red", ["Zhiyuan Liu", "Maosong Sun"]]
+    ["red", ["Yuandong Tian", "Kaiming He", "Jingdong Wang", "Jindong Wang", "Max Welling", "David Xianfeng Gu", "Thomas Kipf", "Yoshua Bengio", "Lawrence Carin", "Wenlin Wang", "Kaiyang Zhou", "Xinggang Wang", "Qi Wu", "Yann LeCun", "Geoffrey Hinton", "Jifeng Dai", "Xiang Bai", "Xiaoou Tang", "Zeynep Akata", "Chunhua Shen", "Lorenzo Torresani", "Dengxin Dai", "Aming Wu", "Ziwei Liu", "Wen Li", "Liangpei Zhang", "Huanfeng Shen", "Yanfei Zhong", "Bo Du", "Yongchao Xu", "Fisher Yu", "Yongqin Xian", "Tsung-Yi Lin", "Yaroslav Ganin"]]
   ]
 }

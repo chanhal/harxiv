@@ -14,7 +14,7 @@ import collections
 from collections import Counter
 from collections import defaultdict
 
-
+import pdb
 
 ave = lambda x : sum(x)/len(x)
 codecs_out = lambda x : codecs.open(x, 'w', 'utf-8')
@@ -37,8 +37,10 @@ config = json_load('config.json')
 
 color = {
         # 'red'    : '#820010', # 听说这是北大红
-        'blue'   : '#0066bb', 
-        'red'    : '#FF0000', 
+        'blue'   : '#0000FF', 
+        'red'    : '#FF0000',
+        'green'  : '#00FF00',
+        'magenta': '#FF00FF',
         'ignore' : '#FFFFFF',
         'black'  : '#000000',
         'lowest_weight' : '#EEEEEE',
@@ -73,9 +75,11 @@ def deal_title(title) :
         listt[1] += [t.lower() for t in listt[1]]
         listt[1] = [t.split() for t in listt[1]]
         listt[1] = sorted(listt[1], key=lambda x:len(x), reverse=True)
+        # 查询关键词list包含了原来词的大小写和拆分后的结果
 
     to_ret = ''
     titlest = title.split()
+    titlest_lower = title.lower().split()
     pt = 0
     while pt < len(titlest) :
         mark = False
@@ -83,8 +87,12 @@ def deal_title(title) :
         for color_t, phrase_list in config['title_highlight'] :
             if color_t in color :
                 color_t = color[color_t]
+
+            # pdb.set_trace()
+
             for igp in phrase_list :
-                if ' '.join(titlest[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp) :
+                if ' '.join(titlest_lower[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp) :
+                # if ' '.join(titlest[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp) :
                     to_ret += '<font color="{}"> {}</font>'.format(color_t, ' '.join(igp))
                     pt += len(igp)
                     mark = True
@@ -95,7 +103,6 @@ def deal_title(title) :
         to_ret += ' ' + titlest[pt]
         pt += 1
     return to_ret
-
 
 
 def show(itemt, idt) :
