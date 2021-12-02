@@ -1,14 +1,14 @@
 {
   "spider": {
-    "domain": "cs.CL", 
+    "domain": "cs.CV", 
     "top_n" : 9999
   },
-  "ignore_subj": ["Sound (cs.SD)", "Audio and Speech Processing (eess.AS)"],
+  "ignore_subj": ["Sound (cs.SD)", "Audio and Speech Processing (eess.AS)", "Distributed, Parallel, and Cluster Computing (cs.DC)", "Computational Complexity (cs.CC)", "Formal Languages and Automata Theory (cs.FL)", "Systems and Control (eess.SY)"],
   "ignore_desp": ["INTERSPEECH"],
   "title_highlight": [
     ["lower_weight", ["Summarization", "Machine Translation"]],
     ["red", ["Causal", "Domain Adaptation", "Domain Adaptive", "Domain Generalization", " Open-World"]],
-    ["green", ["Zero-shot", "Object Detection", "Semantic Segmentation", "Fine-grained", "Unsupervised", "Visual Recognition", "Semi-supervised", "Vision-and-Language", "Long-Tail", "Self-Supervised", "Contrastive Learning", "Panoptic Segmentation", "Semi-Supervised", "Instance Segmentation", "Domain-Agnostic", "Few-Shot", "Federated Learning"]],
+    ["green", ["Zero-shot", "Object Detection", "Semantic Segmentation", "Fine-grained", "Unsupervised", "Visual Recognition", "Semi-supervised", "Vision-and-Language", "Long-Tail", "Self-Supervised", "Contrastive Learning", "Panoptic Segmentation", "Semi-Supervised", "Instance Segmentation", "Domain-Agnostic", "Few-Shot", "Federated Learning", "Weakly-Supervised"]],
     ["magenta", ["Visual Feature Learning"]]
   ],
   "author_highlight": [

@@ -12,13 +12,15 @@ class arxivSpider(scrapy.Spider):
     name = "arxiv"
     allowed_domains = ["arxiv.org"]
     start_urls = [
-        # "https://arxiv.org/list/cs.CL/pastweek?skip=0&show=9999",
-        "https://arxiv.org/list/{}/pastweek?skip=0&show={}".format(config['domain'], config['top_n']),
+        "https://arxiv.org/list/cs.CV/recent?skip=0&show=9999",
+        #"https://arxiv.org/list/{}/pastweek?skip=0&show={}".format(config['domain'], config['top_n']),
+        "https://arxiv.org/list/cs.LG/recent?skip=0&show=9999",
+        "https://arxiv.org/list/cs.CL/recent?skip=0&show=9999",
     ]
 
     def parse(self, response):
-        dts = response.xpath('//dt')
-        dds = response.xpath('//dd')
+        dts = response.xpath('//dl[1]/dt')
+        dds = response.xpath('//dl[1]/dd')
         for dt, dd in zip(dts, dds) :
             item = ArxivItem()
             item['idt']    = dt.xpath('span/a/@href').extract()[0].split('/')[-1]
