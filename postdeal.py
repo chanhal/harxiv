@@ -72,14 +72,14 @@ def deal_title(title) :
     for listt in config['title_highlight'] :
         if type(listt[1][0]) is list :
             break
-        listt[1] += [t.lower() for t in listt[1]]
+        # listt[1] += [t.lower() for t in listt[1]] #chh 不同增加小写单词
         listt[1] = [t.split() for t in listt[1]]
         listt[1] = sorted(listt[1], key=lambda x:len(x), reverse=True)
-        # 查询关键词list包含了原来词的大小写和拆分后的结果
+        #chh 查询关键词list包含了原来词的大小写和拆分后的结果
 
     to_ret = ''
     titlest = title.split()
-    titlest_lower = title.lower().split()
+    titlest_lower = title.lower().split() #chh 新建一个小写标题
     pt = 0
     while pt < len(titlest) :
         mark = False
@@ -88,11 +88,10 @@ def deal_title(title) :
             if color_t in color :
                 color_t = color[color_t]
 
-            # pdb.set_trace()
-
             for igp in phrase_list :
-                if ' '.join(titlest_lower[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp) :
-                # if ' '.join(titlest[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp) :
+                igp_lower = [i.lower() for i in igp]
+                if ' '.join(titlest_lower[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp_lower) :
+                # if ' '.join(titlest[pt:pt+len(igp)]).strip(':,!?') == ' '.join(igp) : #chh 小写匹配小写
                     to_ret += '<font color="{}"> {}</font>'.format(color_t, ' '.join(igp))
                     pt += len(igp)
                     mark = True

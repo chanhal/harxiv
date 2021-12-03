@@ -6,12 +6,13 @@
   "ignore_subj": ["Sound (cs.SD)", "Audio and Speech Processing (eess.AS)", "Distributed, Parallel, and Cluster Computing (cs.DC)", "Computational Complexity (cs.CC)", "Formal Languages and Automata Theory (cs.FL)", "Systems and Control (eess.SY)"],
   "ignore_desp": ["INTERSPEECH"],
   "title_highlight": [
-    ["lower_weight", ["Summarization", "Machine Translation"]],
-    ["red", ["Causal", "Domain Adaptation", "Domain Adaptive", "Domain Generalization", " Open-World"]],
+    ["lower_weight", ["Machine Translation"]],
+    ["red", ["Domain Adaptation", "Domain Adaptive", "Domain Generalization", " Open-World"]],
     ["green", ["Zero-shot", "Object Detection", "Semantic Segmentation", "Fine-grained", "Unsupervised", "Visual Recognition", "Semi-supervised", "Vision-and-Language", "Long-Tail", "Self-Supervised", "Contrastive Learning", "Panoptic Segmentation", "Semi-Supervised", "Instance Segmentation", "Domain-Agnostic", "Few-Shot", "Federated Learning", "Weakly-Supervised"]],
-    ["magenta", ["Visual Feature Learning"]]
+    ["magenta", ["Visual Feature Learning", "Causal Inference", "Causal Intervention", "Causal"]]
   ],
   "author_highlight": [
-    ["red", ["Yuandong Tian", "Kaiming He", "Jingdong Wang", "Jindong Wang", "Max Welling", "David Xianfeng Gu", "Thomas Kipf", "Yoshua Bengio", "Lawrence Carin", "Wenlin Wang", "Kaiyang Zhou", "Xinggang Wang", "Qi Wu", "Yann LeCun", "Geoffrey Hinton", "Jifeng Dai", "Xiang Bai", "Xiaoou Tang", "Zeynep Akata", "Chunhua Shen", "Lorenzo Torresani", "Dengxin Dai", "Aming Wu", "Ziwei Liu", "Wen Li", "Liangpei Zhang", "Huanfeng Shen", "Yanfei Zhong", "Bo Du", "Yongchao Xu", "Fisher Yu", "Yongqin Xian", "Tsung-Yi Lin", "Yaroslav Ganin"]]
+    ["red", ["Yuandong Tian", "Kaiming He", "Jingdong Wang", "Jindong Wang", "Max Welling", "David Xianfeng Gu", "Thomas Kipf", "Yoshua Bengio", "Lawrence Carin", "Wenlin Wang", "Kaiyang Zhou", "Xinggang Wang", "Qi Wu", "Yann LeCun", "Geoffrey Hinton", "Jifeng Dai", "Xiang Bai", "Xiaoou Tang", "Zeynep Akata", "Chunhua Shen", "Lorenzo Torresani", "Dengxin Dai", "Aming Wu", "Ziwei Liu", "Wen Li", "Liangpei Zhang", "Huanfeng Shen", "Yanfei Zhong", "Bo Du", "Yongchao Xu", "Fisher Yu", "Yongqin Xian", "Tsung-Yi Lin", "Yaroslav Ganin", "Serge Belongie", "Nicolas Courty", "Rémi Flamary"]],
+    ["magenta", ["James Hays", "Michael Maire","Takayuki Okatani", "Yasushi Yagi", "Yasuyuki Matsushita", "Masatoshi OKUTOMI", "Andrew Zisserman", "Andrew Blake","Tianqi Chen", "Jun-Yan Zhu", "Chi Jin", "Jitendra Malik", "Feifei Li", "Silvio Savarese", "Phillip Isola", "Antonio Torralba", "William T. Freeman", "Aude Oliva", "Edward Adelson", "David Forsyth", "Jia Deng", "Pietro Perona", "Ross Girshick", "Ian Goodfellow", "Alex Krizhevsky", "Philip Torr", "Andrew Davison", "Andrea Vedaldi", "Karen Simonyan", "Pushmeet Kohli", "Marc Pollefeys", "Pascal Fua", "Luc Van Gool", "Michael Black", "Bernt Schiele", "Andreas Geiger", "Cordelia Schmid", "Jean Ponce", "Song-Chun Zhu", "Jian Sun", "Xiu-Shen Wei", "Zhi-Hua Zhou", "Jianxin Wu", "Ying Wu", "Jiaya Jia", "David Murray", "Vijay Kumar", "Daniel Cremers", "ichard Szeliski", "Jianbo Shi", "In So Kweon", "Lawrence Carin", "Christoph Feichtenhofer"]]
   ]
 }
