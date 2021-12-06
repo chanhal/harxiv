@@ -8,7 +8,7 @@ import json
 import codecs
 import random
 import numpy as np
-from tqdm import tqdm
+# from tqdm import tqdm
 import datetime, time
 import collections
 from collections import Counter

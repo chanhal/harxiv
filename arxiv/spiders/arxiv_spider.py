@@ -16,6 +16,7 @@ class arxivSpider(scrapy.Spider):
         #"https://arxiv.org/list/{}/pastweek?skip=0&show={}".format(config['domain'], config['top_n']),
         "https://arxiv.org/list/cs.LG/recent?skip=0&show=9999",
         "https://arxiv.org/list/cs.CL/recent?skip=0&show=9999",
+        "https://arxiv.org/list/stat.ML/recent?skip=0&show=9999",
     ]
 
     def parse(self, response):
