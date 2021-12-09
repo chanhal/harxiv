@@ -1,0 +1,13 @@
+digraph pic { 
+  // 关系
+  UDA -> OT;
+  UDA -> DANN;
+  OT -> JDOT;
+  JDOT -> DeepJDOT;
+  
+  // 节点定义
+  OT [label="OT: 利用OT找到一个\n最优传输"];
+  DANN [label="DANN 2016"];
+  DeepJDOT [label="DeepJDOT 2018: 基于mini-batch"];
+  
+}
