@@ -10,4 +10,6 @@ digraph pic {
   DANN [label="DANN 2016"];
   DeepJDOT [label="DeepJDOT 2018: 基于mini-batch"];
   
+  type1[label="feature alignment"];
+
 }
