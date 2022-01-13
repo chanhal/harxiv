@@ -10,7 +10,7 @@ del recent.json
 @REM rem 把年月日串中的空格替换为0
 @REM set "YYYYmmdd=%YYYYmmdd: =0%"
 
-set ymd=%date:~0,4%%date:~5,2%%date:~8,2%
+set ymd=%date:~0,4%-%date:~5,2%-%date:~8,2%
 set "ymd=%ymd%.html"
 
 scrapy crawl arxiv -o recent.json
